@@ -9,6 +9,7 @@
     --green: #9ACA6B;
     --font-black: #33372A;
     --white: #FFF;
+    --void: hsla(0, 0%, 0%, 0);
     font-family: 'Georgia Pro', serif;
     color: var(--font-black);
     font-size: 1.2rem;
@@ -167,5 +168,48 @@ a:visited {
     transform: translate(-3px, calc(1em + 1px)) rotate(45deg);
 }
 .btn_return::after {
-    transform: translate(-3px, 3px) rotate(-45deg);
+    transform: translate(-3px, 4px) rotate(-45deg);
+}
+
+.btn_start {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 1em;
+    width: 3rem;
+    height: 3rem;
+}
+.btn_start::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 0.9em solid transparent;
+    border-bottom: 0.9em solid transparent;
+    border-left: 1.5em solid var(--white);
+}
+
+
+.card {
+    display: grid;
+    grid-gap: 1em;
+    font-family: sans-serif;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: var(--white);
+}
+
+.task_setup {
+
+}
+.task_setup__lable {
+    white-space: nowrap;
+}
+.task_steup__range {
+    width: 100%;
 }
