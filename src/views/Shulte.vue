@@ -7,7 +7,7 @@
       <article class="task_setup card" v-if="step === 0">
         <section>
           <label class="task_setup__lable">Количество ячеек {{shulte.cellCount}}</label><br>
-          <input class="task_steup__range" type="range" min="7" max="21" step="2" v-model="shulte.cellCount">
+          <input class="task_steup__range" type="range" min="2" max="7" step="1" v-model="shulte.cellCount">
         </section>
         <button class="btn_start" @click="generate(shulte)"></button>
       </article>
@@ -38,7 +38,7 @@ export default {
       step: 0,
       shulte: {
         timer: 0,
-        cellCount: 7,
+        cellCount: null,
         table: null,
       }
     }
