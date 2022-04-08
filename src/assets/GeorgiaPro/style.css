@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Georgia Pro';
+    src: local('Georgia Pro Condensed Regular'), local('Georgia-Pro-Condensed-Regular'),
+        url('GeorgiaPro-CondRegular.woff2') format('woff2'),
+        url('GeorgiaPro-CondRegular.woff') format('woff'),
+        url('GeorgiaPro-CondRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
