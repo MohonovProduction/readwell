@@ -13,8 +13,10 @@
     color: var(--font-black);
     font-size: 1.2rem;
     text-align: center;
+    min-height: 100vh;
     background-color: var(--light);
 }
+
 
 *,
 ::before,
@@ -24,19 +26,30 @@
     box-sizing: inherit;
 }
 
-button {
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+button,
+a {
     background: none;
     border: none;
     font-size: inherit;
     outline: none;
     transform: scale(1);
     transition: transform .3s;
+    text-decoration: none;
 }
-button:hover {
+button:hover,
+a:hover {
     transform: scale(1);
 }
-button:active {
+button:active,
+a:active {
     transform: scale(0.9);
+}
+a:visited {
+    color: inherit;
 }
 
 .loader-wrapper {
@@ -90,7 +103,7 @@ button:active {
     border-radius: 0;
     outline: none;
     height: auto;
-    width: 2rem;
+    width: 2em;
     border-bottom: 3px solid var(--light);
 }
 .btn_burger::before,
@@ -108,12 +121,8 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsla(0, 0%, 0%, 0);
-    border: none;
-    border-radius: 0;
-    outline: none;
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
 }
 .btn_close::after,
 .btn_close::before {
@@ -138,4 +147,25 @@ button:active {
     color: var(--white);
     background-color: var(--primary);
     padding: .8em;
+}
+
+.btn_return {
+    height: 1em;
+    width: 2em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid var(--light);
+}
+.btn_return::before,
+.btn_return::after {
+    display: block;
+    content: '';
+    width: 1em;
+    height: 3px;
+    background-color: var(--light);
+}
+.btn_return::before {
+    transform: translate(-3px, calc(1em + 1px)) rotate(45deg);
+}
+.btn_return::after {
+    transform: translate(-3px, 3px) rotate(-45deg);
 }

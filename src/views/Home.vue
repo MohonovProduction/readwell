@@ -33,7 +33,7 @@
         <button class="training__btn">Корректурная проба</button>
         <button class="training__btn">Слова</button>
         <button class="training__btn">Муха</button>
-        <button class="training__btn">Шульте</button>
+        <a class="training__btn" href="/shulte">Шульте</a>
       </article>
     </article>
   </div>

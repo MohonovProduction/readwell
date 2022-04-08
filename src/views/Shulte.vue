@@ -1,5 +1,9 @@
 <template>
-
+  <article class="main">
+    <Header title="Шульте">
+      <a href="/menu" class="btn_return"></a>
+    </Header>
+  </article>
 </template>
 
 <script>
