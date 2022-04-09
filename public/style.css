@@ -7,6 +7,7 @@
     --darken: #373028;
     --primary: #53A2FF;
     --green: #9ACA6B;
+    --ellow: #f3ee84;
     --font-black: #33372A;
     --white: #FFF;
     --void: hsla(0, 0%, 0%, 0);
@@ -202,6 +203,12 @@ a:visited {
     padding: 1.5em;
     border-radius: 1em;
     background-color: var(--white);
+}
+
+.warn {
+    padding: 1em;
+    background-color: var(--ellow);
+    border-radius: .5em;
 }
 
 .task_setup {
