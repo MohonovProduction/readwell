@@ -16,7 +16,7 @@
         <table class="shulte_table">
           <tr v-for="tr of shulte.table">
             <td v-for="td of tr">
-              <button class="shulte_table__btn" :class="{ 'shulte_table__success': shulte.success === td }"
+              <button class="shulte_table__btn" :class="{ 'bg_success--action': shulte.success === td }"
                       @click="checkCell(td, shulte)">
                 {{td}}
               </button>
@@ -109,7 +109,7 @@ export default {
   border: 1px solid var(--font-black);
   transition: background-color .3s ease-in-out, transform .3s;
 }
-.shulte_table__success {
+.bg_success--action {
   background-color: var(--green);
 }
 

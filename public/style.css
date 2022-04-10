@@ -11,6 +11,7 @@
     --font-black: #33372A;
     --white: #FFF;
     --void: hsla(0, 0%, 0%, 0);
+    --shadow: hsla(29, 32%, 31%, 0.1);
     font-family: 'Georgia Pro', serif;
     color: var(--font-black);
     font-size: 1.2rem;
@@ -212,6 +213,10 @@ a:visited {
     padding: 1em;
     background-color: var(--ellow);
     border-radius: .5em;
+}
+
+.bg_success--action {
+    background-color: var(--green);
 }
 
 .task_setup {

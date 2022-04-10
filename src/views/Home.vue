@@ -121,7 +121,7 @@
   white-space: nowrap;
   padding: .5em;
   border-radius: .30em;
-  box-shadow: 0 0 10px 2px hsla(29, 32%, 31%, 0.1);
+  box-shadow: 0 0 10px 2px var(--shadow);
   color: var(--dark);
 }
 
