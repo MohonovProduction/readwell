@@ -3,8 +3,8 @@ import Tools from '@/models/Tools.js'
 const Words = {}
 
 Words.generateTable = function(count) {
-    const same = Tools.shuffle(Words.dictionary)
-    const different = Tools.shuffle(Words.differentDictionary)
+    const same = [...Tools.shuffle(Words.dictionary)]
+    const different = [...Tools.shuffle(Words.differentDictionary)]
 
     console.log(same)
     console.log(different)
@@ -20,6 +20,8 @@ Words.generateMap = function(arr) {
     const ids = []
 
     for (let id in arr) if (!arr[id].same) ids.push(id)
+
+    return ids
 }
 
 Words.generateCell = function(words) {

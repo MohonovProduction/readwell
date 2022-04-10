@@ -15,7 +15,7 @@
         <h2 class="header__title">
           Интенсив
           <div class="header__progress_bar">
-            <div class="header__progress_bar--progressed"></div>
+            <div class="header__progress_bar--progressed" :class="{ 'progressed': width }"></div>
           </div>
         </h2>
       </div>
@@ -98,6 +98,10 @@
   height: 5px;
   width: 0;
   background-color: var(--green);
+  transition: width 0.5s ease-in-out;
+}
+.progressed {
+  width: 30%;
 }
 
 .training {
@@ -141,8 +145,12 @@ export default {
       menu: {
         open: false,
         small: true
-      }
+      },
+      width: false
     }
+  },
+  mounted() {
+    setTimeout(() => this.width = true, 1000)
   }
 }
 </script>
