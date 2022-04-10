@@ -6,7 +6,7 @@
     <div class="task__main">
       <article v-if="step === 0" class="card">
         <p>Найди непохожие пары слов</p>
-        <button class="btn_start" @click="generate()"></button>
+        <button class="btn_start" @click="generate(words)"></button>
       </article>
       <article v-if="step === 1" class="words_table card">
         <button v-for="(word, index) of words.table" @click="checkCell(index)" class="words_table__cell">
@@ -42,8 +42,9 @@ export default {
     }
   },
   methods: {
-    generate() {
-      this.words.table = Words.generateTable(12)
+    generate(words) {
+      words.table = Words.generateTable(12)
+      words.map = Words.generateMap(words.table)
 
       this.step = 1
     },

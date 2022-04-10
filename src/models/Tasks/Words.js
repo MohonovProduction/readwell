@@ -16,6 +16,12 @@ Words.generateTable = function(count) {
     return Tools.shuffle(rawTable)
 }
 
+Words.generateMap = function(arr) {
+    const ids = []
+
+    for (let id in arr) if (!arr[id].same) ids.push(id)
+}
+
 Words.generateCell = function(words) {
     this.words = {}
     if (Math.floor(Math.random() * 10)  > 30) {
