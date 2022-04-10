@@ -3,7 +3,7 @@
     <Header title="Шульте">
       <a href="/menu" class="btn_return"></a>
     </Header>
-    <div class="main">
+    <div class="task__main">
       <article class="task_setup card" v-if="step === 0">
         <div class="warn" v-if="shulte.warn.length > 0">{{shulte.warn}}</div>
         <section>
@@ -95,9 +95,6 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  padding: 1em;
-}
 .shulte_table {
   display: flex;
   flex-direction: column;

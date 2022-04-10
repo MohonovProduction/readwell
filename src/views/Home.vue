@@ -31,7 +31,7 @@
         <button class="training__btn">Карусель</button>
         <button class="training__btn">Тексты</button>
         <button class="training__btn">Корректурная проба</button>
-        <button class="training__btn">Слова</button>
+        <a class="training__btn" href="/words">Слова</a>
         <button class="training__btn">Муха</button>
         <a class="training__btn" href="/shulte">Шульте</a>
       </article>
